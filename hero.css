@@ -1,0 +1,43 @@
+/* Custom styles */
+.hero {
+  height: 400px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+footer {
+  background-color: #f8f9fa;
+}
+.price {
+  font-weight: bold;
+  color: #d9534f; /* Bootstrap's danger color */
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .hero {
+    height: 300px; /* Adjust height for tablets */
+  }
+  .card {
+    margin: 0 auto; /* Center cards on smaller screens */
+  }
+}
+@media (min-width: 768px) {
+  .hero {
+    height: 400px; /* Restore height for larger screens */
+  }
+  .container {
+    max-width: 720px; /* Limit container width for better tablet layout */
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    height: 300px; /* Adjust height for smaller screens */
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px; /* Adjust max width for larger screens */
+  }
+}
